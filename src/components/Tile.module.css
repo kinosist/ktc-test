@@ -1,0 +1,27 @@
+.tile {
+  width: 100px;
+  height: 100px;
+  background-color: #8ab4f8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.tile:hover {
+  background-color: #a3c5fb;
+}
+
+.empty {
+  background-color: #666;
+  cursor: default;
+}
+
+.empty:hover {
+  background-color: #666;
+}
