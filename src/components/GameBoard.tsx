@@ -35,7 +35,7 @@ const isSolvable = (tiles: number[]) => {
 const shuffleTiles = () => {
   let tiles: number[];
   do {
-    tiles = [...Array(TILE_COUNT).keys()].sort(() => Math.random() - 0.5);
+    tiles = Array.from(Array(TILE_COUNT).keys()).sort(() => Math.random() - 0.5);
   } while (!isSolvable(tiles));
   return tiles;
 };
